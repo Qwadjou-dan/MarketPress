@@ -4,6 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <style>
+    .placeholder-custom::placeholder {
+      font-size: 12px;
+      color: #6C757D;
+      font-family: 'Roboto', sans-serif;}
+  </style>
   <title>Auto Parts - WordPress Theme</title>
   <script>
     tailwind.config = {
@@ -11,16 +20,128 @@
         extend: {
           colors: {
             headerWidget: '#222222',
-            searchbar: '#464646',
+            searchBar: '#464646',
             menuBar: '#333E48',
             redBg: '#FF0000'
-          }
+          },
+          fontSize: {
+            widgetSize: '13px'
+          },
+          fontFamily: {
+            roboto: ['Roboto', 'sans-serif']
         }
       }
     }
+  }
   </script>
 </head>
 <body>
- 
+ <!-- HEADER-TOPMOST -->
+  <section class="bg-[#F5F5F5] w-full px-24 py-2">
+    <div class="flex flex-row justify-between items-center">
+      <div class="flex flex-row gap-5">
+        <div class="flex flex-row items-center gap-3">
+          <img src="images/header/delivery-bus.png" alt="delivery-bus" class="w-7 h-7">
+          <p class="text-widgetSize font-roboto text-headerWidget tracking-wide">Free Delivery</p>
+        </div>
+        <div class="w-[1px] h-[22px] bg-[#D7D7D7]"></div>
+        <div class="flex flex-row items-center gap-4">
+          <img src="images/header/globe.png" alt="globe" class="w-4 h-4">
+          <p class="text-widgetSize font-roboto text-headerWidget tracking-wide">Return Policy</p>
+        </div>
+        <div class="w-[1px] h-[22px] bg-[#D7D7D7]"></div>
+        <div class="flex flex-row items-center gap-3"> 
+          <p class="text-widgetSize font-roboto text-headerWidget tracking-wide">Follow Us</p>
+          <img src="images/header/fb.png" alt="facebook" class="w-4 h-4">
+          <img src="images/header/x.png" alt="x" class="w-4 h-4">
+          <img src="images/header/instagram.png" alt="instagram" class="w-4 h-4">
+          <img src="images/header/pinterest.png" alt="pinterest" class="w-4 h-4">
+        </div>
+      </div>
+      <div>
+        <p class="text-widgetSize text-headerWidget cursor-pointer ease-in duration-300 hover:text-white">Login</p>
+      </div>
+  </div>
+  </section>
+
+  <!-- HEADER-MIDDLE -->
+  <section class="bg-[#0F233C] w-full px-24 py-7">
+    <div class="flex flex-row justify-between">
+      <div class="flex flex-row justify-center items-baseline gap-1">
+        <p class="font-black text-[30px] text-white">MarketPress</p>
+        <img src="images/header/square.png" alt="dot" class="w-2 h-2">
+      </div>
+      <div class="flex flex-row ml-[-120px]">
+        <div class="flex flex-row justify-between items-center gap-60 bg-white pl-6 pr-3 rounded-l-md py-3">
+          <div>
+            <input type="text" id="product" placeholder="Find your product" class="placeholder-custom">
+          </div>
+          <div class="flex flex-row">
+            <div class="flex flex-row items-center gap-8">
+              <p class="text-[12px] font-medium text-[#7B7B7B]">All categories</p>
+              <img src="images/header/arrow-down.png" class="w-3 h-3">
+            </div>
+          </div>
+        </div>
+        <div class="rounded-r-md bg-redBg flex justify-center items-center w-14">
+          <img src="images/header/search.png" class="w-4 h-4">
+        </div>
+      </div>
+
+      <div class="flex flex-row gap-5">
+        <div class="relative">
+          <img src="images/header/heart.png" class="w-10 h-10">
+          <div class="flex justify-center items-center border-[3px] border-white w-6 h-6 rounded-full bg-[#F0F0F0] text-[12px] absolute left-[22px] bottom-[25px]">0</div>
+        </div>
+        <div class="relative">
+          <img src="images/header/bag.png" class="w-10 h-10">
+          <div class="flex justify-center items-center border-[3px] border-white w-6 h-6 rounded-full bg-redBg text-[12px] text-white absolute left-[22px] bottom-[25px]">0</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HEADER-BOTTOM -->
+   <section class="px-24 py-7">
+    <div class="flex flex-row justify-between items-center">
+      <div class="flex flex-row items-center gap-3">
+        <div class="flex flex-row">
+          <img src="images/header/menu-dots.png" class="w-6 h-6">
+          <img src="images/header/menu-lines.png" class="w-6 h-6 ml-[-6px]">
+        </div>
+        <p class="font-medium text-[18px]">All Categories</p>
+        <img src="images/header/arrow-down2.png" class="w-5 h-5">
+      </div>
+      <div class="flex flex-row gap-5">
+        <div class="flex flex-row items-end gap-1">
+          <p>Home</p>
+          <img src="images/header/arrow-down3.png" class="w-4 h-4">
+        </div>
+        <div class="flex flex-row items-end gap-1">
+          <p>Pages</p>
+          <img src="images/header/arrow-down3.png" class="w-4 h-4">
+        </div>
+        <div class="flex flex-row items-end gap-1">
+          <p>Shop</p>
+          <img src="images/header/arrow-down3.png" class="w-4 h-4">
+        </div>
+        <div class="flex flex-row items-end gap-1">
+          <p>Blog</p>
+          <img src="images/header/arrow-down3.png" class="w-4 h-4">
+        </div>
+        <div class="flex flex-row items-end gap-1">
+          <p>Gallery</p>
+          <img src="images/header/arrow-down3.png" class="w-4 h-4">
+        </div>
+      </div>
+      <div class="flex flex-col items-center">
+        <p>BLACK FRIDAY</p>
+        <p>Get 45% Off!</p>
+      </div>
+    </div>
+
+  
+
+   </section>
 </body>
 </html>
