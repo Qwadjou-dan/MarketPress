@@ -23,7 +23,8 @@
             headerWidget: '#222222',
             searchBar: '#464646',
             menuBar: '#333E48',
-            redBg: '#FF0000'
+            redBg: '#FF0000',
+            amountColor:'#EA1B25'
           },
           fontSize: {
             widgetSize: '13px'
@@ -174,7 +175,7 @@
  </section>
 
 <!-- SHOP BANNERS -->
- <section class="px-24 mb-10">
+ <section class="px-24 mb-20">
   <div class="flex flex-row justify-between">
     <div class="inline-block rounded-md w-[390px] pl-8 pr-16 py-16 space-y-4 bg-[url('../images/main/bgimage1.png')] bg-contain bg-[right_1rem] bg-no-repeat bg-[#F7F7F7]">
       <p class="text-[#707981] text-[22px]">Get 50% Off</p>
@@ -201,8 +202,68 @@
  </section>
 
  <!-- DEALS OF THE WEEK -->
- <section>
+ <section class="px-24">
+  <div>
+    <div class="flex flex-col justify-center items-center">
+      <div class="flex flex-row gap-[170px] justify-between inline-block border rounded-t-lg bg-[#EA1B25] px-5 pt-5 pb-10">
+        <p class="text-white">Deals of the week</p>
+        <div class="flex flex-row">
+          <img src="images/main/back.png" alt="back arrow" class="w-5 h-5">
+          <img src="images/main/forward.png" alt="back arrow" class="w-5 h-5">
+        </div>
+      </div>
+      <div class="border-2 border-amountColor rounded-b-lg mt-[-2px] px-[17px] py-3 flex flex-col items-center gap-2">
+        <div>
+          <img src="images/main/deal1.png" alt="image1" class="w-[250px] h-[250px]">
+        </div>
+        <p class="font-bold">Gheoi Terminus RF</p>
+        <p class="text-[25px] text-amountColor"><del class="text-[#E9E9E9]">&pound590.00</del> &pound350.00</p>
+        <div class="flex flex-row gap-4 text-[12px]">
+          <p>Already Sold:4</p>
+          <p>Available:36</p>
+          <div class="border w-20 h-20 rounded-full flex flex-col justify-center items-center bg-amountColor">
+            <p class="text-[20px] font-bold text-white">40%</p>
+            <p class="font-normal text-[14px] text-white">Offer</p>
+          </div>
+        </div>
+        <div class="h-2 w-[260px] rounded-lg bg-[#F5F5F5] mb-5"></div>
+        <div class="h-0.5 w-[340px] bg-[#F5F5F5] mb-2"></div>
+        <p class="font-bold text-[24px] mb-4">Hurry Up! <span class="text-amountColor">Offers end in:</span></p>
+        <div class="flex flex-row gap-2">
+          <div class="flex flex-col items-center gap-1">
+            <p class="w-10 h-10 rounded-full flex justify-center items-center bg-[#F5F5F5]">0</p>
+            <p class="text-[10px] font-light">DAYS</p>
+          </div>
+          <div class="flex flex-col items-center gap-1">
+            <p class="w-10 h-10 rounded-full flex justify-center items-center bg-[#F5F5F5]">00</p>
+            <p class="text-[10px] font-light">HOURS</p>
+          </div>
+          <div class="flex flex-col items-center gap-1">
+            <p class="w-10 h-10 rounded-full flex justify-center items-center bg-[#F5F5F5]">00</p>
+            <p class="text-[10px] font-light">MINUTES</p>
+          </div>
+          <div class="flex flex-col items-center gap-1">
+            <p class="w-10 h-10 rounded-full flex justify-center items-center bg-[#F5F5F5]">00</p>
+            <p class="text-[10px] font-light">SECONDS</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div>
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    
+  </div>
  </section>
 
 </body>
