@@ -7,12 +7,31 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
   <style>
     .placeholder-custom::placeholder {
       font-size: 14px;
       color: #6C757D;
       letter-spacing: 0.05em;
       font-family: 'Roboto', sans-serif;}
+
+    .deal-images1:hover {
+      box-shadow: 7px 5px 15px -4px rgba(0, 0, 0, 0.1), 0 -3px 5px -5px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease-in-out; 
+    }
+    .deal-images1:hover img, .deal-images2:hover img, .deal-images3:hover img  {
+      opacity: 0.7;
+      transition: opacity 0.3s ease-in-out;
+    }
+    .deal-images2:hover {
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease-in-out;
+    }
+    .deal-images3:hover {
+      box-shadow: -7px 5px 15px -4px rgba(0, 0, 0, 0.1), 0 -3px 5px -5px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease-in-out; 
+    }
+
   </style>
   <title>Auto Parts - WordPress Theme</title>
   <script>
@@ -202,17 +221,17 @@
  </section>
 
  <!-- DEALS OF THE WEEK -->
- <section class="px-24">
-  <div>
+ <section class="px-24 mb-20">
+  <div class="flex flex-row gap-5">
     <div class="flex flex-col justify-center items-center">
       <div class="flex flex-row gap-[170px] justify-between inline-block border rounded-t-lg bg-[#EA1B25] px-5 pt-5 pb-10">
-        <p class="text-white">Deals of the week</p>
+        <p class="text-white font-medium text-nowrap">Deals of the week</p>
         <div class="flex flex-row">
           <img src="images/main/back.png" alt="back arrow" class="w-5 h-5">
           <img src="images/main/forward.png" alt="back arrow" class="w-5 h-5">
         </div>
       </div>
-      <div class="border-2 border-amountColor rounded-b-lg mt-[-2px] px-[17px] py-3 flex flex-col items-center gap-2">
+      <div class="border-2 border-amountColor rounded-b-lg mt-[-2px] px-[17px] py-3 flex flex-col items-center gap-2 deal-images1">
         <div>
           <img src="images/main/deal1.png" alt="image1" class="w-[250px] h-[250px]">
         </div>
@@ -250,21 +269,118 @@
       </div>
     </div>
 
-    <div>
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
+    <div class="w-full pr-4 mt-2">
+      <div class="flex flex-row justify-between">
+        <p class="font-medium text-[22px] mb-2">Daily Deals! Get our best prices</p>
+        <div class="flex flex-row gap-10">
+          <p class="font-medium text-[18px] text-amountColor">30% Offer</p>
+          <p class="font-medium text-[18px] text-[#969696]">70% Offer</p>
+          <p class="font-medium text-[18px] text-[#969696]">45% Offer</p>
+        </div>
       </div>
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
+      <div class="h-[1.5px] w-full bg-[#F5F5F5] mb-2">
+        <div class="h-[2px] w-[40px] bg-amountColor ml-[505px] relative">
+          <div class="border-redBg border-l-solid border-l-transparent border-r-solid border-r-transparent border-l-[8px] border-t-[8px] border-r-[8px] absolute left-3">
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col">
+        <div class="flex flex-row justify-between items-center">
+          <div class="w-fit p-7 mt-8 flex flex-col justify-center items-center deal-images1">
+            <img src="images/main/deal2.png" alt="image2" class="w-48 h-48 ">
+            <p class="text-[16px] font-medium">Lotary Extension Arm</p>
+            <p class="text-[18px] text-amountColor text-medium"><del class="text-[#E9E9E9]">&pound750.00</del> &pound700.00</p>
+          </div>
+          <div class="w-fit p-7 mt-8 flex flex-col justify-center items-center deal-images2">
+            <img src="images/main/deal1.png" alt="image3" class="w-48 h-48 ">
+            <p class="text-[16px] font-medium">Gheoi Terminus RF</p>
+            <p class="text-[18px] text-amountColor text-medium"><del class="text-[#E9E9E9]">&pound590.00</del> &pound350.00</p>
+          </div>
+          <div class="w-fit p-7 mt-8 flex flex-col justify-center items-center deal-images3">
+            <img src="images/main/deal3.png" alt="image4" class="w-48 h-48 ">
+            <p class="text-[16px] font-medium">Kinlock Pins CWR</p>
+            <p class="text-[18px] text-amountColor text-medium"><del class="text-[#E9E9E9]">&pound700.00</del> &pound556.00</p>
+          </div>
+        </div>
+        <div class="flex flex-row justify-between items-center">
+          <div class="w-fit p-7 mt-8 flex flex-col justify-center items-center deal-images1">
+            <img src="images/main/deal4.png" alt="image5" class="w-48 h-48 ">
+            <p class="text-[16px] font-medium">Lotary Extension Arm</p>
+            <p class="text-[18px] text-amountColor text-medium"><del class="text-[#E9E9E9]">&pound750.00</del>&pound700.00</p>
+          </div>
+          <div class="w-fit p-7 mt-8 flex flex-col justify-center items-center deal-images2">
+            <img src="images/main/deal5.png" alt="image6" class="w-48 h-48 ">
+            <p class="text-[16px] font-medium">Gheoi Terminus RF</p>
+            <p class="text-[18px] text-amountColor text-medium"><del class="text-[#E9E9E9]">&pound590.00</del> &pound350.00</p>
+          </div>
+          <div class="w-fit p-7 mt-8 flex flex-col justify-center items-center deal-images3">
+            <img src="images/main/deal6.jpg" alt="image7" class="w-48 h-48 ">
+            <p class="text-[16px] font-medium">Kinlock Pins CWR</p>
+            <p class="text-[18px] text-amountColor text-medium"><del class="text-[#E9E9E9]">&pound700.00</del> &pound556.00</p>
+          </div>
+        </div>
       </div>
     </div>
-    
   </div>
  </section>
+
+<!-- INFO-BLOCKS -->
+ <section class="px-24 mb-20">
+  <div class="flex flex-row justify-center gap-0">
+    <div class="flex flex-row gap-3 border w-fit p-10">
+      <img src="images/main/icon1.png" class="w-10 h-10">
+      <div class="space-y-2">
+        <p class="font-medium">Free Delivery</p>
+        <p class="text-[#626060] text-[12px] font-medium">from $78</p>
+      </div>
+    </div>
+    <div class="flex flex-row gap-3 border w-fit py-10 px-12">
+      <img src="images/main/icon2.png" class="w-10 h-10">
+      <div class="space-y-2">
+        <p class="font-medium">99% Customer</p>
+        <p class="text-[#626060] text-[12px] font-medium">feedbacks</p>
+      </div>
+    </div>
+    <div class="flex flex-row gap-3 border w-fit py-10 px-14">
+      <img src="images/main/icon3.png" class="w-10 h-10">
+      <div class="space-y-2">
+        <p class="font-medium">10 Days</p>
+        <p class="text-[#626060] text-[12px] font-medium">for free return</p>
+      </div>
+    </div>
+    <div class="flex flex-row gap-3 border w-fit py-10 px-12">
+      <img src="images/main/icon4.png" class="w-10 h-10">
+      <div class="space-y-2">
+        <p class="font-medium">Payment</p>
+        <p class="text-[#626060] text-[12px] font-medium">secure system</p>
+      </div>
+    </div>
+    <div class="flex flex-row gap-3 border w-fit py-10 px-12">
+      <img src="images/main/icon5.png" class="w-10 h-10">
+      <div class="space-y-2">
+        <p class="font-medium">24/7</p>
+        <p class="text-[#626060] text-[12px] font-medium">online support</p>
+      </div>
+    </div>
+  </div>
+ </section>
+
+ <section class="px-24">
+  <div class="flex flex-row justify-center items-center ml-5 border bg-gradient-to-r from-[#DA2B65] via-[#FADD9C] to-[#F7F0D6] w-[73rem] h-[300px] relative">
+    <div class="absolute left-14 bottom-[-7px]">
+      <img src="images/main/deal3.png" alt="hydraulic disk" class="w-[370px] h-[370px]">
+    </div>
+    <div class="ml-72">
+      <p class="text-amountColor text-[22px] font-thin">Get 50% Off</p>
+      <p class="text-[45px] font-bold tracking-wider">Hydraulic Disks</p>
+      <div class="inline-block rounded-md px-7 py-3 bg-amountColor mt-16 hover:bg-[#83B734] transition-transform east-in duration-800 hover:animate-pulse">
+        <p class="text-[12px] text-white">GO SHOP</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WEEK CATEGORIES -->
 
 </body>
 </html>
